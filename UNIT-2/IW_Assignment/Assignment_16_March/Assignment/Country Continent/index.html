@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+</head>
+<body>
+    <select id="continent">
+        <option value="s1">India</option>
+        <option value="s2">United States of America</option>
+        <option value="s3">China</option>
+        <option value="s4">Nepal</option>
+        <option value="s5">Australia</option>
+        <option value="s6">France</option>
+        <option value="s7">Germany</option>
+        <option value="s8">South Africa</option>
+        <option value="s9">Nigeria</option>
+        <option value="s10">Mexico</option>
+        <option value="s11">Argentina</option>
+        <option value="s12">Brazil</option>
+        <option value="s13">Canada</option>
+        <option value="s14">Singapore</option>
+        <option value="s15">Sweden</option>
+    </select>
+    <br>
+    <br>
+    <button id="submit">Find continent</button>
+</body>
+</html>
+
+<script>
+   
+   document.querySelector("#submit").addEventListener("click",myfunction)
+
+   function myfunction() {
+       var country = document.querySelector("#continent")
+
+       switch(country.value) {
+        case "s1":
+               alert("The continent of Asia");
+               break;
+        case "s2":
+               alert("The continent of North America and South America")
+               break;
+               case "s3":
+               alert("East Asia")
+               break;
+               case "s4":
+               alert("Asia")
+               break;
+               case "s5":
+               alert("Oceania")
+               break;
+               case "s6":
+               alert("Europe")
+               break;
+               case "s7":
+               alert("Europe")
+               break;
+               case "s8":
+               alert("Africa")
+               break;
+               case "s9":
+               alert("Africa")
+               break;
+               case "s10":
+               alert("The continent of North America")
+               break;
+               case "s11":
+               alert("South America")
+               break;
+               case "s12":
+               alert("South America")
+               break;
+               case "s13":
+               alert("North and Central America")
+               break;
+               case "s14":
+               alert("Asia")
+               break;
+               case "s15":
+               alert("Europe")
+               break;
+
+       }
+   }
+
+
+
+
+</script>

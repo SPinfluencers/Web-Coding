@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit - C2</title>
+    <style>
+        .box {
+            height: 1000px;
+            width: 70%;
+            border: 1px solid none;
+            margin: auto;
+        }
+        .box1 {
+            height: 450px;
+            width: 100%;
+            border: 1px solid none;
+            margin: auto;
+        }
+        .A {
+            height: 200px;
+            width: 100%;
+            border: 1px solid none;
+            margin: auto;
+            display: flex;
+        }
+        .a {
+            height: 100%;
+            width: 25%;
+            border: 1px solid none;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        h2 {
+            margin-top: 10px;
+        }
+        p {
+            margin-top: -5px;
+        }
+        .B {
+            height: 500px;
+            width: 100%;
+            border: 1px solid none;
+            margin-top: 30px;  
+            box-sizing: border-box;
+            display: flex;
+            margin: auto;
+        }
+        .x {
+            height: 100%;
+            width: 25%;
+            margin: 10px;
+            border: 1px solid none;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+
+<body style="background-color: #FFFFF0;">
+    <div class="box">
+        <div class="box1">
+            <div class="A">
+                <div class="a">
+                    <img src="https://pbs.twimg.com/profile_images/1330900730895536132/d8BjM9BP_400x400.jpg" alt="business" height="60px" width="60px">
+                    <h2>Business School</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="a">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdCwG7zJvWFQv1zBEy8ufzVnOltU-obtUe5CCimKZm34exzPKaJNsJV1ktW81nMsrr3A&usqp=CAU" alt="shoping" height="60px" width="60px">
+                    <h2>Marketing</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="a">
+                    <img src="https://i.pinimg.com/originals/3e/5d/f1/3e5df1a2f3c3558ace3233d7504c2e05.jpg" alt="photography" height="60px" width="60px">
+                    <h2>photography</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                </div>
+            </div>
+            <div class="A">
+                <div class="a">
+                    <img src="data:image/png;base64,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" alt="social media" height="60px" width="60px">
+                    <h2>Social Media</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="a">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLZ2NVCyUHCIuZ5kNQ7vdonekfTZCO0fIseg&usqp=CAU" alt="Developement" height="60px" width="60px">
+                    <h2>Developement</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="a">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROTTqQ_2YEhFnjVAv61X1nWFagZxnzee0OFw&usqp=CAU" alt="Design" height="60px" width="60px">
+                    <h2>Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                </div>
+            </div>
+        </div>
+        <div class="box1">
+            <h1 style="text-align: center;">Certified Teachers</h1>
+            <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium numquam eius, doloribus nesciunt exercitationem ipsum ipsa magnam, facere ipsam molestias ratione obcaecati sequi sint voluptatum voluptates delectus, iusto ab voluptatem.</p>
+            <div class="B">
+                <div class="x">
+                    <img src="https://static9.depositphotos.com/1070812/1091/i/600/depositphotos_10916856-stock-photo-teacher-on-background-of-blackboard.jpg" alt="Teacher1" width="100%" height="70%">
+                    <h2 style="text-align: center;">Bianca Wilson</h2>
+                    <p style="font-size: 15px; text-align: center; color: red; margin-top: -10px;">Teacher</p>
+                    <p style="text-align: center; font-size: 20px;">I am Ambitious Work holic but apart from that preety simple person</p>
+                </div>
+                <div class="x">
+                    <img src="https://st.depositphotos.com/1177973/3772/i/950/depositphotos_37724089-stock-photo-young-teacher-near-chalkboard-in.jpg" alt="coding Teacher" width="100%" height="70%">
+                    <h2 style="text-align: center;">Mitch Parker</h2>
+                    <p style="font-size: 15px; text-align: center; color: red; margin-top: -10px;">Teacher</p>
+                    <p style="text-align: center; font-size: 20px;">I am Ambitious Work holic but apart from that preety simple person</p>
+                </div>
+                <div class="x">
+                    <img src="https://www.gannett-cdn.com/presto/2020/05/05/USAT/6a0bc760-12ef-4646-99b3-f77f5e169735-Teacher.png?crop=1593,897,x6,y0&width=1593&height=897&format=pjpg&auto=webp" alt="Dsa" width="100%" height="70%">
+                    <h2 style="text-align: center;">Stella Smith</h2>
+                    <p style="font-size: 15px; text-align: center; color: red; margin-top: -10px;">Teacher</p>
+                    <p style="text-align: center; font-size: 20px;">I am Ambitious Work holic but apart from that preety simple person</p>
+                </div>
+                <div class="x">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmhdR_cOwSKEFyE2zU8G_KXEQiuZToBhZNUg&usqp=CAU" alt="Teacher2" width="100%" height="70%">
+                    <h2 style="text-align: center;">author thor</h2>
+                    <p style="font-size: 15px; text-align: center; color: red; margin-top: -10px;">Teacher</p>
+                    <p style="text-align: center; font-size: 20px;">I am Ambitious Work holic but apart from that preety simple person</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

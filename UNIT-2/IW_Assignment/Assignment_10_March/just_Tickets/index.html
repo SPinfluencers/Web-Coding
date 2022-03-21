@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+         width: 60%;
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          grid-template-rows: repeat(3,100px);
+          gap: 25px;
+          justify-content: center;
+          
+      }
+ 
+      #container > div {
+         border: 1px solid red;
+         display: flex;
+         box-sizing: border-box;
+      }
+
+      img {
+        width: 100%;
+        height: 100px;
+      } 
+
+      #container > div > div {
+        margin-left: 20px;
+      }
+      button {
+        padding: 10px 15px 10px 15px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #f84364;
+        margin-bottom: 80px;
+      }
+
+      /* Medium screens */
+      @media only screen and (min-width: 421px) and (max-width: 780px) {
+      }
+      
+      /* small screens */
+      @media only screen and (min-width: 70px) and (max-width: 420px) {
+      }
+    </style>
+  </head>
+  <body>
+    <!-- image link - 
+      https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg -->
+    <h1>Just movies</h1>
+    <div id="container">
+      <div>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="">
+        <h2>Radhe Shyam</h2>
+        <p>Releasing on 11 March,2022</p>
+        <button>Book Tickit</button>
+      </div>
+      <div>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="">
+        <h2>Radhe Shyam</h2>
+        <p>Releasing on 11 March,2022</p>
+        <button>Book Tickit</button>
+      </div>
+      <div>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="">
+        <h2>Radhe Shyam</h2>
+        <p>Releasing on 11 March,2022</p>
+        <button>Book Tickit</button>
+      </div>
+      <div>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="">
+        <h2>Radhe Shyam</h2>
+        <p>Releasing on 11 March,2022</p>
+        <button>Book Tickit</button>
+      </div>
+      <div>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="">
+        <h2>Radhe Shyam</h2>
+        <p>Releasing on 11 March,2022</p>
+        <button>Book Tickit</button>
+      </div>
+      <div>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="">
+        <h2>Radhe Shyam</h2>
+        <p>Releasing on 11 March,2022</p>
+        <button>Book Tickit</button>
+      </div>
+    </div>
+  </body>
+</html>

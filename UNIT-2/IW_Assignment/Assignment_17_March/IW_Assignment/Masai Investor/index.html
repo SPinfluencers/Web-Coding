@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Investor</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+
+        .logo {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
+
+<script>
+    
+   var investors = [
+       {
+           name: "Vijay Shekhar Sharma",
+           image:
+           "https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-17/investors_268316.png",
+           role: "Founder & CEO",
+           componyLogo: "https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-17/investors_268316.png",
+
+        }
+   ]
+
+  investors.map(function (element) {
+      var box = document.createElement("div");
+
+      var img = document.createElement("img");
+      img.src = element.image;
+
+      box.append(img);
+
+      document.querySelector("#container").append(box);
+  });
+
+
+</script>
