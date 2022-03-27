@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied Job</title>
+    <link rel="stylesheet" href="commonStyles.css" />
+</head>
+<body>
+    <div id="links">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="bookmark.html">Bookmarks</a></div>
+      </div>
+
+      <main>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Job applied</th>
+              <th>Salary expected</th>
+              <th>Add to bookmark</th>
+            </tr>
+          </thead>
+          <tbody id="body">
+            <!-- Append your output to tbody -->
+          </tbody>
+        </table>
+      </main>
+
+</body>
+</html>
+
+<script>
+    
+    var jobList = JSON.parse(localStorage.getItem("jobApplications"))
+    
+    var bookmarks = JSON.parse(localStorage.getItem("bookmarksObj")) || [];
+    // console.log(jobList)
+
+    jobList.map(function(element) {
+
+      var row = document.createElement("tr")
+
+      var td1 = document.createElement("td")
+      td1.innerText = element.name
+
+      var td2 = document.createElement("td")
+      td2.innerText = element.email
+
+      var td3 = document.createElement("td")
+      td3.innerText = element.role
+
+      var td4 = document.createElement("td")
+      td4.innerText = element.salary
+
+      var td5 = document.createElement("td")
+      td5.innerText = "BookMark"
+      td5.style.color = "blue"
+      td5.style.cursor = "pointer"
+
+      td5.addEventListener("click" , function() {
+        addToBookmarks(element)
+        td5.innerText = "Done"
+        td5.style.color = "green"
+      })
+
+      row.append(td1,td2,td3,td4,td5)
+
+      document.querySelector("tbody").append(row)
+    })
+
+    function  addToBookmarks(element) {
+      console.log(element)
+      bookmarks.push(element)
+      localStorage.setItem("bookmarksObj", JSON.stringify(bookmarks));
+    }
+
+
+    
+</script>
