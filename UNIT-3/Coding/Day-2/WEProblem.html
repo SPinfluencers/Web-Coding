@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="storeProducts(event)" action="" id="products">
+        <input type="text" name="" id="name">
+        <input type="number" name="" id="price">
+        <input type="number" name="" id="brand">
+
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
+
+<script>
+
+   let arr = []
+
+  
+  function product(n, p, b) {
+      this.name = n;
+      this.price = p;
+      this.brand = b;
+  }
+
+  function storeProducts(e) {
+
+   e.preventDefault();
+
+   let form = document.getElementById("products");
+
+   let name = form.name.value;
+//    console.log(name)
+
+   let price = form.price.value;
+//    console.log(price)
+
+   let brand = form.brand.value;
+//    console.log(brand)
+
+   let p1 = new product(name, price, brand)
+
+   arr.push(p1)
+   console.log(arr)
+
+  }
+   
+
+
+</script>
