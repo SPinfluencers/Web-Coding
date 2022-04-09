@@ -1,5 +1,5 @@
 
-#container {
+.product {
     width: 60%;
     margin: auto;
     display: grid;
@@ -8,7 +8,7 @@
     margin-top: 20px;
 }
 
-#container > div {
+.product > div {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: grid;
     padding: 10px;
@@ -34,4 +34,12 @@ div > button {
     color: white;
     background-color: rgb(255,63,108);
     padding: 5%;
+}
+
+.wishhead{
+    font-size: 2rem;
+    margin: 15rem 0 4rem 5rem;
+}
+.wishcount{
+    color: Gray;
 }
