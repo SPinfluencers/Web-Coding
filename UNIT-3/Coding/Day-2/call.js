@@ -4,7 +4,7 @@ let kitchen = {
     purpose: "cook",
 
     cookFood: function(order) {
-        console.log('serving {order} in ${this.name}');
+        console.log(`serving ${order} in ${this.name}`);
     },
 };
 

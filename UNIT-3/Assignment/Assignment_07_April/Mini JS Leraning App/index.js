@@ -12,20 +12,19 @@ var scope =
         four: "Maharstra",
     }
 
-var hoisting  =
+// var hoisting  =
 
-    { 
-        1: "sagar",
-        2: "pawar",
-        3: "Jalgaon",
-        4: "Maharstra",
-    }
+//     { 
+//         1: "sagar",
+//         2: "pawar",
+//         3: "Jalgaon",
+//         4: "Maharstra",
+//     }
    
 
 localStorage.setItem("dataScope",JSON.stringify(scope))
 
 document.querySelector("#scope").addEventListener("click", myfunction)
-
 
 var dataList = JSON.parse(localStorage.getItem("dataScope"))
 
