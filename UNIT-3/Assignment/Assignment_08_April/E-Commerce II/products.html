@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+       <link rel="stylesheet" href="products.css" />
+</head>
+<body>
+    <div id="link">
+        ><a href="admin.html">Admin Page</a>
+    </div>
+    <div id="container"></div>
+</body>
+</html>
+
+<script>
+   
+var productData = JSON.parse(localStorage.getItem("Products")) || []
+//    console.log(productData)
+  
+   productData.map(function(ele,ind) {
+        
+    var box = document.createElement("div")
+
+    var image = document.createElement("img")
+    image.src = ele.image
+
+    var name = document.createElement("p")
+    name.innerText = ele.name
+
+    var category = document.createElement("h3")
+    category.innerText = ele.category
+
+    var price = document.createElement("p")
+    price.innerText = ele.price
+
+    var gender = document.createElement("p")
+    gender.innerText = ele.gender
+
+    var buttonRm = document.createElement("button")
+    buttonRm.innerText = "REMOVE"
+
+    buttonRm.addEventListener("click", function() {
+        removefromPage(ind)
+    })
+
+    var buttonSl = document.createElement("button")
+    buttonSl.innerText = "SOLD"
+  
+    box.append(image, category, name, price, gender, buttonRm, buttonSl)
+
+    document.querySelector("#container").append(box)
+
+   })
+
+   function removefromPage(ind) {
+      productData.splice(ind,1)
+      localStorage.setItem("Products", JSON.stringify(productData))
+      window.location.href="products.html"
+   }
+
+
+</script>
