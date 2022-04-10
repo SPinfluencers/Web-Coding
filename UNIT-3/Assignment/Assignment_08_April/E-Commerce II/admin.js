@@ -27,7 +27,7 @@ function myfunction(e) {
 
 // //    let image = form.category.value;
 
-   let list = new ProductP(name, category, image, price, gender)
+let list = new ProductP(name, category, image, price, gender)
 
    Products.push(list)
 //    console.log(arr)

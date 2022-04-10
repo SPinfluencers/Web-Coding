@@ -1,8 +1,32 @@
+var stack = []
+function stackSp(arr) {
+    
+    if(arr[0] === 1) {
+        if(stack.length !== 0) {
+            console.log(stack[stack.length-1])
+            stack.pop()
+        }
+        else {
+            console.log("No Food")
+        }
+    }
+    else if(arr[0] === 2) {
+        stack.push(arr[1])
+    }
+}
+
+
 
 function runProgram(input){
     
-    console.log(input)
-    
+   var input = input.trim().split("\n")
+   var T = +input[0]
+   var line = 1
+   for(let i = 0; i < T; i++) {
+       let arr = input[line].trim().split(" ").map(Number)
+       line++
+       stackSp(arr)
+   }
 }
 
 
@@ -10,9 +34,9 @@ function runProgram(input){
 
 if (process.env.USERNAME === "Admin") {
   runProgram(`6
-  1
   2 5
   2 7
+  1
   2 9
   1
   1`);

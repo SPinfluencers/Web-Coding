@@ -21,6 +21,6 @@ let anthony = {
     live: "Kashmir",
 }
 
-let x = amar.friends.call(akbar, "cooking")
+let x = amar.friends.call(anthony, "singing")
 
 
