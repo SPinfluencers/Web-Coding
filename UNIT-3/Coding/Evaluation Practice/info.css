@@ -1,0 +1,18 @@
+.info {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 4rem;
+    margin-top: 20px;
+}
+
+.info > div {
+    color: black;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+
+button {
+    margin: 5%;
+}
