@@ -7,5 +7,26 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="start()">Start Slide Show</button>
+    <button onclick="start()">End Slide Show</button>
+
+    <div id="images"></div>
+</body>
 </body>
 </html>
+
+<script>
+
+    let i = 0;
+
+    function start() {
+        let imagesArr = JSON.parse(localStorage.getItem("images"));
+
+        let img = document.createElement("img")
+
+        setInterval(function() {
+            i++;
+            console.log("i", imagesArr[i])
+        },2000)
+    }
+</script>

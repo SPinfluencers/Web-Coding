@@ -1,8 +1,9 @@
 
-let signupData = []
-console.log(signupData)
+// let signupData = []
 
-console.log(signupData)
+let dataArray = JSON.parse(localStorage.getItem("signupData")) || [];
+
+// console.log(signupData)
 
 function storedData(a, b, c, d) {
     this.name = a
@@ -15,19 +16,29 @@ function myfunction(e) {
 
     e.preventDefault();
 
-    let form = document.getElementById("add")
+    var form = document.getElementById("add")
 
-    let name = form.name.value
+    var name = form.name.value
 
-    let contact = form.number.value
+    var contact = form.number.value
 
-    let email = form.email.value
+    var email = form.email.value
 
-    let password = form.password.value
+    var password = form.password.value
 
     var x = new storedData(name, contact, email, password)
 
-    signupData.push(x)
+    dataArray.push(x)
 
-    localStorage.setItem("signupData" , JSON.stringify(signupData))
+    localStorage.setItem("signupData" , JSON.stringify(dataArray))
+
+    window.location.href = "login.html"
+
+    var name = form.name.value = null
+
+    var contact = form.contact.value = null
+
+    var email = form.email.value = null
+
+    var password = form.password.value = null
 }
