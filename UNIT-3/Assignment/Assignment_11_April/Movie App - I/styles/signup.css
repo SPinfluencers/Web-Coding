@@ -29,9 +29,11 @@ input {
   padding: 3%;
   margin-bottom: 5%;
 }
+
 #submit {
     background-color: teal;
     color: white;
     padding: 5px 30px;
     border-radius: 5px;
+    
 }
