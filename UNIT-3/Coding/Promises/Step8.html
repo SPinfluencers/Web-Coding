@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Step 8</h1>
+</body>
+</html>
+
+<script>
+
+let url1 = "https://www.meme.net/babubhaiyaa.jpg";
+let url2 = "https://www.meme.net/raju.jpg";
+let url3 = "https://www.meme.net/shyam.jpg";
+
+function download(url) {
+    return new Promise(function(res , rej) {
+        setTimeout(function() {
+            console.log(`Downloading ${url}`)
+
+            res(url);
+        }, 3000)
+    })
+}
+
+function process(url) {
+    console.log(`Processing ${url}`)
+}
+
+async function main() {
+    
+    let d1 = await download(url1)
+
+    process(d1);
+
+    let d2 = await download(url2)
+
+    process(d2);
+
+    let d3 = await download(url3)
+
+    process(d3);
+
+}
+
+main();
+</script>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Step - 6</h1>
+</body>
+</html>
+
+<script>
+   
+let url1 = "https://www.meme.net/babubhaiyaa.jpg";
+let url2 = "https://www.meme.net/raju.jpg";
+let url3 = "https://www.meme.net/shyam.jpg";
+
+function download(url, callback) {
+    setTimeout(function () {
+        console.log(`Download ${url}`)
+
+        callback(url)
+    }, 3000)
+
+}
+
+// callBack Process
+
+download(url1, function process(url) {
+    console.log(`Process ${url1}`)
+
+    download(url2, function process(ur2) {
+    console.log(`Process ${url1}`)
+
+    download(url3, function process(url3) {
+    console.log(`Process ${url3}`)
+})
+})
+})
+</script>

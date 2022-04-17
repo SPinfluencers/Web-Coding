@@ -9,13 +9,17 @@
 </head>
 <body>
     <h1>WEATHER - APPLICATION</h1>
-    <video src="/Assignment/Assignment_14_April/WEATHER I/06_1596083776.mp4" muted loop autoplay></video>
+    <video src="/WEATHER I/06_1596083776.mp4" muted loop autoplay></video>
     <div id="submit">
         <input id="city" type="text" placeholder="City">
         <button onclick="getData()" id="button">submit</button>
+        <button onclick="geolocation()">Get Weather Location</button>
     </div>
     <div id="container">
         <div id="weather"></div>
+        <div id="sevenData">
+            <button>Next 7 Day Weather</button>
+        </div>
         <div id="mapouter">
             <div class="mapouter">
                 <div class="gmap_canvas">
