@@ -11,7 +11,7 @@ const searchVideo = async() => {
 
         console.log(data.items)
 
-        // append(data.items)
+        append(data.items)
     }
 
     catch(err) {
@@ -20,37 +20,37 @@ const searchVideo = async() => {
 };
 searchVideo()
 
-// const append = (video) => {
-//     let show_video = document.getElementById("content")
-//     show_video.innerHTML = null
+const append = (video) => {
+    let show_video = document.getElementById("content")
+    show_video.innerHTML = null
 
-//     video.forEach(({id:{videoId} , snippet:{title}}) => {
+    video.forEach(({id:{videoId} , snippet:{title}}) => {
 
-//         let div = document.createElement("div")
+        let div = document.createElement("div")
 
-//         let iframe = document.createElement("iframe");
+        let iframe = document.createElement("iframe");
 
-//         iframe.src = `https://www.youtube.com/embed/${videoId}`
+        iframe.src = `https://www.youtube.com/embed/${videoId}`
 
-//         iframe.width = "100%"
-//         iframe.hight = "100%"
-//         iframe.allow = "allowfullscreen"
+        iframe.width = "100%"
+        iframe.hight = "100%"
+        iframe.allow = "allowfullscreen"
 
-//         let name = document.createElement("h5")
-//         name.innerText = title
+        let name = document.createElement("h5")
+        name.innerText = title
         
 
-//         div.append(iframe , name)
+        div.append(iframe , name)
 
-//         // let data = {
-//         //     title,
-//         //     videoId
-//         // }
+        // let data = {
+        //     title,
+        //     videoId
+        // }
 
-//         // div.onclick = () => {
-//         //     showVideo(data)
-//         // }
+        // div.onclick = () => {
+        //     showVideo(data)
+        // }
 
-//         show_video.append(div)
-//     });
-// }
+        show_video.append(div)
+    });
+}
