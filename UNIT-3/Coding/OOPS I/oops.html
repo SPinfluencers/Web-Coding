@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object Oriented Programming</h1>
+</body>
+</html>
+
+<script>
+
+
+// Object Oriented Programming
+
+// 1. Inheritence
+
+class car {
+
+    constructor(n,b) {
+        this.name = n;
+        this.wheels = 4;
+        this.brand = b;
+    }
+}
+
+    class sedan extends car {
+    constructor(n,b) {
+        super(n,b)
+        this.engine = "pertrol"
+        this.roofTop = true
+    }
+}
+
+class ElecricSedan extends sedan {
+
+    constructor(n,b,value) {
+
+        super(n,b);
+
+        this.electric = value;
+
+    }
+
+}
+
+
+
+let s1 = new ElecricSedan("baleno","Maruti",true)
+
+console.log(s1)
+
+
+</script>

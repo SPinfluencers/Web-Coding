@@ -32,9 +32,9 @@ const append = (video) => {
 
         iframe.src = `https://www.youtube.com/embed/${videoId}`
 
-        iframe.width = "100%"
-        iframe.hight = "100%"
-        iframe.allow = "allowfullscreen"
+        iframe.width = "80%"
+        iframe.hight = "80%"
+        iframe.allow = "fullscreen"
 
         let name = document.createElement("h5")
         name.innerText = title
@@ -42,15 +42,21 @@ const append = (video) => {
 
         div.append(iframe , name)
 
-        // let data = {
-        //     title,
-        //     videoId
-        // }
+        let data = {
+            title,
+            videoId,
+        }
 
-        // div.onclick = () => {
-        //     showVideo(data)
-        // }
+        div.onclick = () => {
+            showVideo(data)
+        }
 
         show_video.append(div)
     });
+}
+
+const showVideo = (x) => {
+    window.location.href = "video.html"
+    store.push(x)
+    localStorage.setItem("video", JSON.stringify(x));
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>polymorphism</h1>
+</body>
+</html>
+
+<script>
+
+// polymorphism
+
+
+class vehicals {
+
+    run() {
+
+        console.log("vehical is running")
+
+    }
+}
+
+    class cars extends vehicals {
+
+    run() {
+
+        console.log("car is running")
+
+    }
+}
+
+    class Truck extends vehicals {
+
+    run() {
+
+        console.log("Truck is running")
+
+    }
+}
+
+let v1 = new vehicals()
+
+let v2 = new cars()
+
+let v3 = new Truck()
+
+v1.run()
+v2.run()
+
+// Parent -> Vehicals
+
+// Child -> Car & Truck
+
+</script>

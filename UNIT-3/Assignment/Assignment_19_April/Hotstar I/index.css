@@ -1,0 +1,103 @@
+body {
+    /* background-color: rgb(12,17,27); */
+}
+
+
+/* header */
+#header {
+    width: 100%;
+    height: 80px;
+    border: 1px solid none;
+    display: flex;
+    background-color: rgb(19,26,39);
+    cursor: pointer;
+    position: fixed;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+#list {
+    display: flex;
+    gap: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: white;
+}
+#search { 
+   width: fit-content; 
+   height: 100%;
+   border: solid 1px none;
+   /* padding: 1%; */
+   margin-left: 400px;
+   padding-top: 20px;
+}
+input {
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: white;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(19,26,39);
+}
+button {
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(19,26,39);
+    border-radius: 5px;
+    border-left-style: none;
+    border-top-style: none;
+    cursor: pointer;
+}
+#query {
+   width: 300px;
+   padding: 5px 10px;
+   
+}
+
+#hotlogo {
+    width: 200px;
+    height: 80px;
+}
+
+#movies {
+    border: solid 1px rgb(25,33,51);
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    height: 500px;
+    width: 320px;
+    border-top: none;
+    /* overflow: scroll; */
+    margin-left: 62%;
+    padding-top: 70px;
+    cursor: pointer;
+}
+#movies > div {
+    width: 100%;
+    border: 1px solid none;
+    border-left-style: none;
+    border-right-style: none;
+    display: flex;
+    background-color: rgb(12,17,27);
+    padding: 2%;
+}
+#movies > div > div  {
+    width: 50%;
+    height: 100px;
+    border: 1px solid none;
+    padding: 2%;
+    background-color: rgb(25,33,51);
+}
+#movies > div > div >img  {
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px;
+}
+h5 {
+    padding-left: 10px;
+    color: white;
+}
