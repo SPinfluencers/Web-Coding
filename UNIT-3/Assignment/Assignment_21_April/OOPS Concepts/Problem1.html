@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Problem 1</h1>
+</body>
+</html>
+<script>
+
+    // Family Tree
+
+   class family {
+
+       constructor(g,m) {
+           this.grandFather = g;
+           this.grandMother = m
+       }
+   }
+
+   class family_1 extends family {
+
+        constructor(g,m) {
+            super(g,m)
+            this.Father = "Rajendra"
+            this.Mother = "Kamal"
+        }
+   }
+   
+   class family_2 extends family_1 {
+       constructor(g,m) {
+
+           super(g,m)
+
+           this.son = "sagar"
+       }
+   }
+
+let s1 = new family_2("Vasudeo" , "ChandraBhaga")
+
+console.log(s1)
+
+// Cat Tree
+
+class Cat {
+
+constructor(g,m) {
+    this.cat_grandFather = g;
+    this.cat_grandMother = m
+}
+}
+
+class family_1 extends family {
+
+ constructor(g,m) {
+     super(g,m)
+     this.cat_Father = "indian"
+     this.cat_Mother = "Western"
+ }
+}
+
+class family_2 extends family_1 {
+constructor(g,m) {
+
+    super(g,m)
+
+    this.son = "Indian"
+}
+}
+
+let s2 = new family_2("Indian" , "Western")
+
+console.log(s2)
+
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Polymorphism.</h1>
+</body>
+</html>
+
+<script>
+
+   class masaiSchool {
+       add() {
+           console.log("Graduate in six month")
+       }
+   }
+
+   class DSA extends masaiSchool {
+       add() {
+           console.log("DSA needs Logic")
+       }
+   }
+
+   class Coding extends masaiSchool {
+       add() {
+           console.log("Coding Need Practice")
+       }
+   }
+
+   let p1 = new masaiSchool()
+   let p2 = new DSA()
+   let p3 = new Coding()
+
+   p1.add()
+   p2.add()
+
+</script>
