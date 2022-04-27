@@ -12,7 +12,7 @@
 </html>
 <script>
 
-    // Family Tree
+    // Problem - 1
 
    class family {
 
@@ -75,5 +75,79 @@ constructor(g,m) {
 let s2 = new family_2("Indian" , "Western")
 
 console.log(s2)
+
+// Problem - 2 
+
+class signup {
+       constructor() {
+           var username;
+           var password;
+       }
+
+       getuserName() {
+           return this.username
+         
+       }
+
+       setuserName(value) {
+           this.username = value
+    
+       }
+   }
+
+   let p2 = new signup();
+
+   p1.setuserName("Sagar@1993")
+  
+   console.log(p2.getuserName())
+
+   // Problem - 3
+
+   class movie {
+
+constructor(n,a) {
+    this.name = n
+    this.actor = a
+    this.rating = []
+}
+
+add(rating) {
+    this.rating.push(rating)
+}  
+}
+
+let p1 = new movie("Pushpa" , "Allu Arjun")
+
+p3.add(9)
+
+console.log(p3)
+
+// Problem - 4 
+
+class masaiSchool {
+       add() {
+           console.log("Graduate in six month")
+       }
+   }
+
+   class DSA extends masaiSchool {
+       add() {
+           console.log("DSA needs Logic")
+       }
+   }
+
+   class Coding extends masaiSchool {
+       add() {
+           console.log("Coding Need Practice")
+       }
+   }
+
+   let p5 = new masaiSchool()
+   let p6 = new DSA()
+   let p7 = new Coding()
+
+   p5.add()
+   p6.add()
+   p7.add()
 
 </script>
