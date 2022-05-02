@@ -10,3 +10,51 @@
     justify-content: right;
     gap: 50px;
 }
+
+ /* searchArea */
+
+ #searchArea {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black ;
+    text-align: center;
+ }
+ #searchArea > div {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+ }
+
+ /* #search {
+    color: red;
+ } */
+ input {
+     padding: 1%;
+     padding: 10px 400px;
+     text-align: center;
+     font-size: large;
+     border-radius: 5px;
+ }
+ button {
+     margin-top: 10px;
+     padding: 10px 30px;
+     font-size: 20px;
+     border-radius: 10px;
+     background-color: teal;
+     color: white;
+ }
+
+    /* container */
+
+#container {
+    width: 100%;
+    margin-left: 100px;
+}    
+
+#container > div {
+    width: 80%;
+    text-align: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 3%;
+}
+

@@ -8,14 +8,23 @@
 </head>
 <link rel="stylesheet" href="/style/index.css">
 <body>
+    <!-- Navbar -->
     <div id="navbar">
     </div>
-    <h1>Food Page</h1>
-    <div id="search">
-        <input id="query" type="text" placeholder="Enter Recipe Name">
+
+    <!-- search Bar -->
+    <div style="background-image: url('https://bit.ly/3LyUb8r');" id="searchArea">
+        <p style="color: white; font-size: 60px;  margin-bottom: -50px; font-family: system-ui;">Pawar Cafe</p>
+        <div id="search">
+            <input id="query" oninput="debounce(main,100)" type="text" placeholder="Search">
+        </div>
+        <button><a style="color: white;" href="/todayMeal.html"><div class=""></div>TODAY DISH</a></button>
     </div>
-    <div id="container"></div>
+
+    <!-- Recipe content -->
+    <div id="container">
+    </div>
 </body>
 </html>
 
-<script src="/Scripts/index.js" type="module"></script>
+<script src="/Scripts/index.js"></script>
