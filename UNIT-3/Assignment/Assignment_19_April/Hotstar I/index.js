@@ -56,6 +56,10 @@ function appendMovies(data) {
 
         Details.append(poster,detail)
 
+        Details.addEventListener("click" , function() {
+            movieClick(e)
+        })
+
         movies_div.append(Details)
         
     });
@@ -83,3 +87,54 @@ function debounce(func , delay) {
     }, delay)
 }
 
+var arr = [];
+
+   function movieClick(e) {
+    arr.push(e)
+    window.location.reload()
+    localStorage.setItem("movies" , JSON.stringify(e))
+}
+
+// let movie = JSON.parse(localStorage.getItem("movies"))
+
+// function displayMoie(data) {
+
+//     let containt = document.getElementById("containt")
+//     containt.innerHTML = null
+
+//     data.map(function(e) {
+//         let div = document.createElement("div")
+
+//         let img = document.createElement("img")
+//         img.src = e.Poster
+
+//         div.append(img)
+//         containt.append(div)
+//     })
+// }
+// displayMoie(arr)
+
+var mov = JSON.parse(localStorage.getItem("movies"))
+
+var box = document.createElement("div")
+
+var detail = document.createElement("div")
+
+var value = Math.random()*10
+var imd = Math.floor(value)
+
+var img = document.createElement("img")
+img.src = `${ mov.Poster}`
+
+var Title = document.createElement("h2")
+Title.innerText = `${mov.Title}`
+
+var Type = document.createElement("h4")
+Type.innerText = `${mov.Type}`
+
+var Year = document.createElement("h4")
+Year.innerText = `${mov.Year}`
+
+box.append(img)
+detail.append(Title , Type , Year)
+containt.append(box , detail)
