@@ -1,0 +1,23 @@
+p {
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 1%;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+.button1 {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
